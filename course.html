@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/95c8bfd2c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+      <div class="nav-links" id="nav-links">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li>
+            <a href="./index.html">ДОМ</a>
+          </li>
+          <li><a href="./about.html">О КОЛЛЕДЖЕ</a></li>
+          <li><a href="./course.html">СПЕЦИАЛЬНОСТИ</a></li>
+          <li><a href="./contact.html">КОНТАКТЫ</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Наши специальности</h1>
+  </section>
+
+  <!-- courses  -->
+  <section class="course">
+    <h1>Специальности</h1>
+    <div class="row">
+      <div class="course-col">
+        <h3>Учет и аудит</h3>
+        <p>
+          Имеет межотраслевой характер и позволяет подготовить экономистов широкого профиля, владеющих принципами
+          организации учетно-аналитических и контрольных процессов на предприятии любых организационных структур и форм
+          собственности.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Маркетинг</h3>
+        <p>
+          Важнейшая составляющая успеха компании. Его реализовывают специалисты-маркетологи. Эта профессия — одна из
+          самых разносторонних на рынке труда.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Менеджмент</h3>
+        <p>
+          эффективное и рациональное достижение целей организации посредством планирования, организации, руководства и
+          контроля организационных ресурсов.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="course-col">
+        <h3>Программное обеспечение</h3>
+        <p>
+          Эффективное и рациональное достижение целей организации посредством планирования, организации, руководства и
+          контроля организационных ресурсов.
+        </p>
+      </div>
+
+      <div class="course-col">
+        <h3>Банковское дело</h3>
+        <p>
+          Это отрасль финансовой науки, которая изучает порядок создания, регулирования деятельности коммерческих банков
+          и особенности их присутствия на различных сегментах финансового рынка.
+        </p>
+      </div>
+
+      <div class="course-col">
+        <h3>Оценка</h3>
+        <p>
+          Оценщик - это специалист, способный определить стоимость любого вида имущества: движимого и недвижимого,
+          земли, пакетов акций и долей бизнеса, имущественных прав, нематериальных активов.
+        </p>
+      </div>
+    </div>
+    <div class="course-col">
+      <h3>Туризм</h3>
+      <p>
+        Эта профессия включает в себя различные функции, связанные с созданием туристического продукта, организацией и
+        продвижением туристических услуг, а
+        также обеспечением удовлетворения потребностей и предпочтений туристов в незабываемых впечатлениях.
+      </p>
+    </div>
+    </div>
+
+
+  </section>
+
+  <!-- facilities  -->
+  <section class="facilites">
+    <h1>Наши возможности</h1>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="assets/library.png" alt="library" />
+        <h3>Библиотека</h3>
+        <p>
+          Это уютное пространство, наполненное мудростью и незабываемыми приключениями. Здесь стены обложены книгами,
+          словно подарками, которые жаждут быть распакованными. Каждая полка является мостом между сотнями миров,
+          открывая нам новые горизонты мысли и воображения.
+        </p>
+      </div>
+      <div class="facilities-col">
+        <img src="assets/basketball.png" alt="library" />
+        <h3>Спортивная площадка</h3>
+        <p>
+          Удобная спортивная площадка на свежем воздухе, на которой проводятся соревнования.
+        </p>
+      </div>
+      <div class="facilities-col">
+        <img src="assets/cafeteria.png" alt="library" />
+        <h3>Столовая</h3>
+        <p>
+          Где студенты, в любой момент могут поесть вкусную и полезную еду.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer  -->
+  <section class="footer">
+    <h4>О нас</h4>
+
+    <div class="icons">
+      <a href="https://www.instagram.com/afec_college_almaty?igsh=MWZzMGU1ZGtybGkyaA==" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+    </div>
+
+  </section>
+
+  <script>
+    //for toggle menu
+    const navlinks = document.getElementById("nav-links");
+    function showMenu() {
+      navlinks.style.right = "0px";
+    }
+    function hideMenu() {
+      navlinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>

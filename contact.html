@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/95c8bfd2c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="./index.html">ДОМ</a>
+            </li>
+            <li><a href="./about.html">О КОЛЛЕДЖЕ</a></li>
+            <li><a href="./course.html">СПЕЦИАЛЬНОСТИ</a></li>
+            <li><a href="./contact.html">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Связаться с нами</h1>
+    </section>
+    <!-- Contact us Content -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.203600250439!2d76.86842671126199!3d43.205218771006486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369b31e30f16f%3A0xf8a87566ad46be36!2z0YPQu9C40YbQsCDQoNGL0YHQutGD0LvQsdC10LrQvtCy0LAgMzksINCQ0LvQvNCw0YLRiw!5e0!3m2!1sru!2skz!4v1737210353639!5m2!1sru!2skz"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-solid fa-home"></i>
+            <span
+              ><h5>Рыскулбекова 39А</h5>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-solid fa-phone"></i>
+            <span><h5>+7 707 748 0478</h5></span>
+            <p>С понедельника по пятницу </p>
+          </div>
+          <div>
+            <i class="fa fa-solid fa-envelope"></i>
+            <span><h5>kolledzh_fek@mail.ru</h5></span>
+          </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Введите свое имя" required>
+                <input type="text" placeholder="Введите свою электронную почту" required>
+                <textarea cols="8" placeholder="Сообщение" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <section class="footer">
+      <h4>О НАС</h4>
+
+      <div class="icons">
+        <a href="https://www.instagram.com/afec_college_almaty?igsh=MWZzMGU1ZGtybGkyaA==" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+      </div>
+
+    </section>
+
+    <script>
+      //for toggle menu
+      const navlinks = document.getElementById("nav-links");
+      function showMenu() {
+        navlinks.style.right = "0px";
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
